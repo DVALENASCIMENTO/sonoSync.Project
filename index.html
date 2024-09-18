@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio de Ciclos de Sono</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <h1>Relógio de Ciclos de Sono</h1>
+        <div id="time"></div>
+
+        <!-- Input para escolher a hora de dormir -->
+        <label for="sleep-time">Escolha a hora de dormir:</label>
+        <input type="time" id="sleep-time">
+        <button id="set-alarm">Definir Alarme</button>
+
+        <!-- Ciclos de sono -->
+        <div class="cycles">
+            <div class="cycle cycle1"><p>Ciclo 1</p></div>
+            <div class="cycle cycle2"><p>Ciclo 2</p></div>
+            <div class="cycle cycle3"><p>Ciclo 3</p></div>
+            <div class="cycle cycle4"><p>Ciclo 4</p></div>
+            <div class="cycle cycle5"><p>Ciclo 5</p></div>
+        </div>
+        
+        <!-- Som do alarme -->
+        <audio id="alarm-sound" src="musica-suave.mp3" preload="auto"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
